@@ -194,7 +194,7 @@ if uploaded_file is not None:
         preds_2 = model_list[0].predict(inputs_img)[0][0]
         preds_3 = model_list[4].predict(inputs_img)[0][0]
         preds = preds_1 * par2.xg_weight + preds_2 * par2.main_k_weight + preds_3 * par2.main_weight
-    st.write(f'## Prediction: {preds}')
+    st.write(f'## Prediction of (E_j / E_c): {preds}')
     # 顯示上傳圖檔
     image1 = io.imread(uploaded_file)
     st.image(image1)
