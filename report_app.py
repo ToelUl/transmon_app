@@ -14,7 +14,7 @@ st.write("""
 **Method 2** : With higher variance but lower bias
 """)
 
-allow_range = st.slider('Allowable error range', 0.0, 30.0, 20.0, 0.5, )
+allow_range = st.slider('Allowable error range of (E_j / E_c)', 0.0, 30.0, 20.0, 0.5, )
 
 if method==1:
     acc_list = [0.,    0.158, 0.28,  0.356, 0.41,  0.446, 0.49,  0.526, 0.552, 0.568, 0.584, 0.594,
