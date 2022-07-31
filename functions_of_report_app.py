@@ -6,6 +6,7 @@ from skimage import io
 
 
 
+
 class RandomColorDistortion(tf.keras.layers.Layer):
     def __init__(self, contrast_range=(0.5, 1.5),
                  brightness_delta=(-0.2, 0.2), **kwargs):
